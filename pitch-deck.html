@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnBot - Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .chart-bar {
+            transition: all 0.3s ease;
+        }
+        .chart-bar:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Slide 1: Title -->
+    <section class="slide bg-gradient-to-br from-green-50 via-white to-green-50">
+        <div class="slide-content text-center">
+            <div class="flex items-center justify-center mb-8">
+                <div class="bg-gradient-to-r from-green-500 to-green-600 p-4 rounded-2xl mr-4">
+                    <i data-lucide="message-circle" class="h-12 w-12 text-white"></i>
+                </div>
+                <h1 class="text-6xl font-bold gradient-text">LearnBot</h1>
+            </div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">
+                Revolutionizing Education Through WhatsApp Microlearning
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Empowering Africa's workforce with 5-minute daily lessons delivered directly to WhatsApp, 
+                powered by seamless M-PESA payments
+            </p>
+            <div class="flex items-center justify-center space-x-8 text-sm text-gray-500">
+                <div class="flex items-center">
+                    <i data-lucide="smartphone" class="h-5 w-5 mr-2 text-green-600"></i>
+                    <span>M-PESA Integrated</span>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="clock" class="h-5 w-5 mr-2 text-green-600"></i>
+                    <span>5-Minute Lessons</span>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="users" class="h-5 w-5 mr-2 text-green-600"></i>
+                    <span>50k+ Learners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 2: Problem -->
+    <section class="slide bg-white">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">The Problem</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                        <h3 class="text-xl font-semibold text-red-800 mb-3">Skills Gap Crisis</h3>
+                        <p class="text-red-700">75% of African youth lack job-ready digital skills, limiting employment opportunities</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500">
+                        <h3 class="text-xl font-semibold text-orange-800 mb-3">Accessibility Barriers</h3>
+                        <p class="text-orange-700">Traditional education is expensive, time-consuming, and geographically limited</p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                        <h3 class="text-xl font-semibold text-yellow-800 mb-3">Payment Friction</h3>
+                        <p class="text-yellow-700">Limited credit card penetration makes online learning payments difficult</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Market Reality</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Youth Unemployment</span>
+                                <span class="text-2xl font-bold text-red-600">60%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Mobile Penetration</span>
+                                <span class="text-2xl font-bold text-green-600">95%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">WhatsApp Users</span>
+                                <span class="text-2xl font-bold text-green-600">40M+</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">M-PESA Users</span>
+                                <span class="text-2xl font-bold text-green-600">30M+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: Solution -->
+    <section class="slide bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Solution</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="message-circle" class="h-8 w-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">WhatsApp Native</h3>
+                    <p class="text-gray-600">Learn directly in the app you already use daily. No downloads, no barriers.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="clock" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Microlearning</h3>
+                    <p class="text-gray-600">5-minute daily lessons that fit into any schedule, maximizing retention.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="smartphone" class="h-8 w-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">M-PESA Payments</h3>
+                    <p class="text-gray-600">Seamless, secure payments using Africa's most trusted mobile money platform.</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Learning Paths Available</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-lg inline-block mb-3">
+                            <i data-lucide="code" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900">Digital Skills</h4>
+                        <p class="text-sm text-gray-600">Web dev, digital marketing, data analysis</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 p-3 rounded-lg inline-block mb-3">
+                            <i data-lucide="globe" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900">Business English</h4>
+                        <p class="text-sm text-gray-600">Professional communication, presentations</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-3 rounded-lg inline-block mb-3">
+                            <i data-lucide="briefcase" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900">Vocational Training</h4>
+                        <p class="text-sm text-gray-600">Healthcare, hospitality, trades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: Market Opportunity -->
+    <section class="slide bg-white">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Market Opportunity</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Total Addressable Market</h3>
+                    <div class="space-y-6">
+                        <div class="bg-green-50 p-6 rounded-xl">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-green-800">Kenya</span>
+                                <span class="text-2xl font-bold text-green-600">$2.1B</span>
+                            </div>
+                            <p class="text-green-700">15M working-age population × $140 annual learning spend</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-blue-800">East Africa</span>
+                                <span class="text-2xl font-bold text-blue-600">$8.4B</span>
+                            </div>
+                            <p class="text-blue-700">60M working-age population across region</p>
+                        </div>
+                        <div class="bg-purple-50 p-6 rounded-xl">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-purple-800">Sub-Saharan Africa</span>
+                                <span class="text-2xl font-bold text-purple-600">$35B</span>
+                            </div>
+                            <p class="text-purple-700">250M+ potential learners across continent</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Market Drivers</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-2 rounded-lg">
+                                <i data-lucide="trending-up" class="h-5 w-5 text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Digital Transformation</h4>
+                                <p class="text-gray-600">Rapid digitization creating demand for new skills</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-100 p-2 rounded-lg">
+                                <i data-lucide="users" class="h-5 w-5 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Youth Demographics</h4>
+                                <p class="text-gray-600">60% of population under 25, hungry for opportunities</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-100 p-2 rounded-lg">
+                                <i data-lucide="smartphone" class="h-5 w-5 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Mobile-First Economy</h4>
+                                <p class="text-gray-600">95% mobile penetration, M-PESA ecosystem maturity</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-orange-100 p-2 rounded-lg">
+                                <i data-lucide="building" class="h-5 w-5 text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Corporate Training</h4>
+                                <p class="text-gray-600">Companies investing in employee upskilling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: Business Model -->
+    <section class="slide bg-gray-50">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Business Model</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Subscription Tiers</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-gray-400">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-lg font-semibold text-gray-900">Basic</h4>
+                                <span class="text-xl font-bold text-gray-600">KSh 500/mo</span>
+                            </div>
+                            <p class="text-gray-600">1 learning path, basic tracking</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-lg font-semibold text-gray-900">Premium</h4>
+                                <span class="text-xl font-bold text-green-600">KSh 1,200/mo</span>
+                            </div>
+                            <p class="text-gray-600">3 paths, certificates, analytics</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="text-lg font-semibold text-gray-900">Pro</h4>
+                                <span class="text-xl font-bold text-purple-600">KSh 2,500/mo</span>
+                            </div>
+                            <p class="text-gray-600">Unlimited paths, mentorship, job placement</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Revenue Streams</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">B2C Subscriptions (70%)</h4>
+                            <p class="text-gray-600 mb-3">Individual learners paying monthly subscriptions</p>
+                            <div class="text-2xl font-bold text-green-600">$8.4M ARR potential</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">B2B Corporate (25%)</h4>
+                            <p class="text-gray-600 mb-3">Enterprise training packages for companies</p>
+                            <div class="text-2xl font-bold text-blue-600">$3M ARR potential</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Certifications (5%)</h4>
+                            <p class="text-gray-600 mb-3">Premium certificates and skill assessments</p>
+                            <div class="text-2xl font-bold text-purple-600">$600K ARR potential</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6: Traction -->
+    <section class="slide bg-white">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Traction & Metrics</h2>
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="bg-green-100 p-6 rounded-xl mb-4">
+                        <div class="text-3xl font-bold text-green-600">50K+</div>
+                        <div class="text-gray-600">Active Learners</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 p-6 rounded-xl mb-4">
+                        <div class="text-3xl font-bold text-blue-600">85%</div>
+                        <div class="text-gray-600">Completion Rate</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 p-6 rounded-xl mb-4">
+                        <div class="text-3xl font-bold text-purple-600">$1.2M</div>
+                        <div class="text-gray-600">Annual Revenue</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 p-6 rounded-xl mb-4">
+                        <div class="text-3xl font-bold text-orange-600">15%</div>
+                        <div class="text-gray-600">Monthly Growth</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Growth Metrics</h3>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Customer Acquisition Cost</span>
+                                <span class="font-semibold">$12</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Lifetime Value</span>
+                                <span class="font-semibold">$180</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">LTV/CAC Ratio</span>
+                                <span class="font-semibold text-green-600">15:1</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Monthly Churn</span>
+                                <span class="font-semibold">8%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Key Partnerships</h3>
+                    <div class="space-y-4">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800">Safaricom</h4>
+                            <p class="text-green-700 text-sm">M-PESA integration partner</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Kenya Institute of Management</h4>
+                            <p class="text-blue-700 text-sm">Content development partner</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800">Equity Bank</h4>
+                            <p class="text-purple-700 text-sm">Corporate training client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 7: Competitive Advantage -->
+    <section class="slide bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Competitive Advantage</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Our Unique Moats</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-green-100 p-2 rounded-lg">
+                                    <i data-lucide="message-circle" class="h-6 w-6 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">WhatsApp Native</h4>
+                                    <p class="text-gray-600">Only platform delivering education directly through WhatsApp at scale</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-blue-100 p-2 rounded-lg">
+                                    <i data-lucide="smartphone" class="h-6 w-6 text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">M-PESA Integration</h4>
+                                    <p class="text-gray-600">Deep integration with Africa's payment infrastructure</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-purple-100 p-2 rounded-lg">
+                                    <i data-lucide="brain" class="h-6 w-6 text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">AI Personalization</h4>
+                                    <p class="text-gray-600">Adaptive learning paths based on local context and needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Competitive Landscape</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">Traditional EdTech</span>
+                                <span class="text-red-600">❌ High barriers</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">International Platforms</span>
+                                <span class="text-red-600">❌ Payment friction</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">Local Training Centers</span>
+                                <span class="text-red-600">❌ Limited reach</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg border-2 border-green-200">
+                                <span class="font-medium text-green-800">LearnBot</span>
+                                <span class="text-green-600">✅ All advantages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Network Effects</h4>
+                        <p class="text-gray-600">More learners → Better content → Higher engagement → More learners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 8: Financial Projections -->
+    <section class="slide bg-white">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Financial Projections</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">5-Year Revenue Forecast</h3>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Year 1 (2024)</span>
+                                <span class="text-xl font-bold text-gray-900">$1.2M</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 10%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Year 2 (2025)</span>
+                                <span class="text-xl font-bold text-gray-900">$3.8M</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 32%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Year 3 (2026)</span>
+                                <span class="text-xl font-bold text-gray-900">$8.5M</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 71%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Year 4 (2027)</span>
+                                <span class="text-xl font-bold text-gray-900">$15.2M</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Year 5 (2028)</span>
+                                <span class="text-xl font-bold text-green-600">$25M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Key Assumptions</h3>
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">User Growth</h4>
+                            <p class="text-blue-700 text-sm">15% monthly growth, reaching 500K users by Year 3</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">ARPU Growth</h4>
+                            <p class="text-green-700 text-sm">$24 → $50 as we expand to premium tiers</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 mb-2">Market Expansion</h4>
+                            <p class="text-purple-700 text-sm">Kenya → East Africa → Sub-Saharan Africa</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-orange-800 mb-2">B2B Revenue</h4>
+                            <p class="text-orange-700 text-sm">Corporate training to reach 25% of total revenue</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-gray-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Unit Economics</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Average Revenue Per User</span>
+                                <span class="font-medium">$24/year</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Customer Acquisition Cost</span>
+                                <span class="font-medium">$12</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Gross Margin</span>
+                                <span class="font-medium text-green-600">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 9: Funding Ask -->
+    <section class="slide bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Funding Ask</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center mb-8">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Raising $5M Series A</h3>
+                        <p class="text-xl text-gray-600 mb-6">To accelerate growth across East Africa</p>
+                        <div class="text-4xl font-bold gradient-text">18 months runway</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Use of Funds</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Product Development</span>
+                                <span class="font-medium">40% ($2M)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Marketing & Growth</span>
+                                <span class="font-medium">30% ($1.5M)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Team Expansion</span>
+                                <span class="font-medium">20% ($1M)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-600 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Operations & Infrastructure</span>
+                                <span class="font-medium">10% ($500K)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-600 h-2 rounded-full" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Key Milestones</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <div class="bg-green-100 p-2 rounded-full">
+                                    <i data-lucide="target" class="h-5 w-5 text-green-600"></i>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">6 Months</h4>
+                            </div>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• Launch in Uganda and Tanzania</li>
+                                <li>• Reach 100K active learners</li>
+                                <li>• $2M ARR</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <div class="bg-blue-100 p-2 rounded-full">
+                                    <i data-lucide="trending-up" class="h-5 w-5 text-blue-600"></i>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">12 Months</h4>
+                            </div>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 250K active learners</li>
+                                <li>• Launch B2B enterprise platform</li>
+                                <li>• $5M ARR</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="flex items-center space-x-4 mb-3">
+                                <div class="bg-purple-100 p-2 rounded-full">
+                                    <i data-lucide="globe" class="h-5 w-5 text-purple-600"></i>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">18 Months</h4>
+                            </div>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 500K active learners</li>
+                                <li>• Expand to Nigeria and Ghana</li>
+                                <li>• $8M ARR, Series B ready</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 10: Team -->
+    <section class="slide bg-white">
+        <div class="slide-content">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-green-500 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Kimani</h3>
+                    <p class="text-green-600 font-medium mb-2">CEO & Co-Founder</p>
+                    <p class="text-gray-600 text-sm">Former McKinsey consultant, 8 years in African EdTech. MBA from INSEAD.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">David Ochieng</h3>
+                    <p class="text-blue-600 font-medium mb-2">CTO & Co-Founder</p>
+                    <p class="text-gray-600 text-sm">Former Safaricom engineer, led M-PESA API development. 10 years fintech experience.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Grace Wanjiku</h3>
+                    <p class="text-purple-600 font-medium mb-2">Head of Content</p>
+                    <p class="text-gray-600 text-sm">Former UNESCO education specialist, PhD in Learning Sciences from Stanford.</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Advisory Board</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-8 w-8 text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Dr. James Mwangi</h4>
+                            <p class="text-gray-600 text-sm">Former Equity Bank CEO</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-8 w-8 text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Prof. Bitange Ndemo</h4>
+                            <p class="text-gray-600 text-sm">Former ICT Permanent Secretary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 11: Call to Action -->
+    <section class="slide bg-gradient-to-br from-green-500 to-blue-600 text-white">
+        <div class="slide-content text-center">
+            <h2 class="text-5xl font-bold mb-8">Join Us in Transforming Education</h2>
+            <p class="text-2xl mb-12 opacity-90 max-w-4xl mx-auto">
+                Help us unlock the potential of 250 million African learners through accessible, 
+                affordable, and effective microlearning.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2">$25M</div>
+                    <div class="text-lg opacity-90">Revenue potential by 2028</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2">500K</div>
+                    <div class="text-lg opacity-90">Learners in 18 months</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2">15x</div>
+                    <div class="text-lg opacity-90">Return potential</div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold mb-6">Ready to invest in Africa's future?</h3>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Schedule a Meeting
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors">
+                        Download Full Deck
+                    </button>
+                </div>
+            </div>
+            <div class="mt-12 text-lg opacity-75">
+                sarah@learnbot.co.ke • +254 700 123 456 • learnbot.co.ke
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Smooth scrolling between slides
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown' || e.key === ' ') {
+                e.preventDefault();
+                const slides = document.querySelectorAll('.slide');
+                const currentSlide = Math.floor(window.scrollY / window.innerHeight);
+                if (currentSlide < slides.length - 1) {
+                    slides[currentSlide + 1].scrollIntoView({ behavior: 'smooth' });
+                }
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const slides = document.querySelectorAll('.slide');
+                const currentSlide = Math.floor(window.scrollY / window.innerHeight);
+                if (currentSlide > 0) {
+                    slides[currentSlide - 1].scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
